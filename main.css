@@ -1,0 +1,45 @@
+
+* {
+	font-family: Arial, fantasy, serif, Arial;
+}
+
+.float {
+	position: absolute;
+}
+.loose {
+	margin: 20px;
+}
+.compact {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+.round {
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+.round32 {
+	-moz-border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -khtml-border-radius: 32px;
+    border-radius: 32px;
+}
+.shadow {
+	-webkit-box-shadow:5px 5px 10px black;
+	-moz-box-shadow:5px 5px 10px black;	
+}
+
+div#snooker {
+	position: absolute;
+	right: 10px;
+	top: 60px;
+}
+
+div#gomoku2 {
+	position: absolute;
+	right: 10px;
+	top: 360px;
+}
+
