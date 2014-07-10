@@ -113,3 +113,12 @@ div#gomoku2 {
 	top: 420px;
 }
 
+div.demo {
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+}
+
+code {
+	font: normal 12pt Ubuntu Mono;	
+}

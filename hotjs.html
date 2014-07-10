@@ -1,0 +1,122 @@
+<html>
+
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>HotJS, HTML5 game framework</title>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="prism.js"></script>
+<link rel="stylesheet" href="prism.css"/>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<h1>HotJS</h1>
+
+<h2>What is HotJS?</h2>
+<p>HotJS is a web game/app framework, mainly for mobile, but also works on PC.</p>
+<p>Using javascript & HTML5 Canvas.</p>
+<p>Target OS: Android / iOS / WP</p>
+<p>Target browser: Chrome / Safari / Firefox / Opera / IE. </p>
+
+<h3>Features</h3>
+<ul>
+<li>Pure Object-oriented;</li>
+<li>Architecture: App -> Canvas View -> Scene -> [ Layer ] -> Node</li> 
+<li>Math vector/matrix calculation.</li>
+<li>Sprite / animat / particle system.</li>
+<li>Resource preload and dynamic loading.</li>
+<li>Physics collision engine.</li> 
+<li>Mouse/multi-touch event and gesture.</li>
+<li>I18N multi-language handling.</li>
+<li>Network/social API.</li>
+<li>Unit test with QUnit, and performance benchmark utility.</li>
+<li>UI add-ons.</li>
+<li>AI: gomoku, path finding, etc.</li>
+</ul>
+
+<h2>Demos</h2>
+
+<div class='round demo'>
+<p class='demotitle'>Gomoku (with smart AI)</p>
+<iframe class='compact shadow' src='http://floatinghotpot.github.io/gomoku2/' width='360' height='480'>
+</iframe>
+</div>
+
+<div class='round demo'>
+<p class='demotitle'>Snooker (swipe the screen to shoot ball)</p>
+<iframe class='compact shadow' src='http://floatinghotpot.github.io/hotjs/hotjs/demos/012_snooker.html' width='480' height='360'>
+</iframe>
+</div>
+
+<div class='round demo'>
+<p class='demotitle'>Physics Gravity (try dragging and throwing balls)</p>
+<iframe class='compact shadow' src='http://floatinghotpot.github.io/hotjs/hotjs/demos/010_physics.html' width='480' height='360'>
+</iframe>
+</div>
+
+<div class='round demo'>
+<p class='demotitle'>Physics Collision (click #1, #2, #3 button)</p>
+<iframe class='compact shadow' src='http://floatinghotpot.github.io/hotjs/hotjs/demos/005_collision.html' width='480' height='360'>
+</iframe>
+</div>
+
+<div class='round demo'>
+<p class='demotitle'>Benchmark (click start / stop button)</p>
+<iframe class='compact shadow' src='http://floatinghotpot.github.io/hotjs/hotjs/demos/011_benchmark.html' width='480' height='360'>
+</iframe>
+</div>
+
+<div class='round demo'>
+<p class='demotitle'>Color Show Board (swip the screen, or drag/drop balls)</p>
+<iframe class='compact shadow' src='http://floatinghotpot.github.io/hotjs/hotjs/demos/017_showboard.html' width='480' height='360'>
+</iframe>
+</div>
+
+<div class='round demo'>
+<p class='demotitle'>Sprite</p>
+<iframe class='compact shadow' src='http://floatinghotpot.github.io/hotjs/hotjs/demos/013_sprite.html' width='480' height='360'>
+</iframe>
+</div>
+
+<div class='round demo'>
+<p class='demotitle'>Animate (frame rate: 25)</p>
+<iframe class='compact shadow' src='http://floatinghotpot.github.io/hotjs/hotjs/demos/016_animat.html' width='480' height='640'>
+</iframe>
+</div>
+
+<h3>Example Code</h3>
+<pre><code class='language-javascript'>
+var viewX = (new hotjs.View())
+		.setContainer('mainView')
+		.setSize(w,h)
+		.showFPS(false);
+		
+var room = (new hotjs.Physics.Scene())
+		.setSize(w, h)
+		.setColor("blue")
+		.showGrid(false)
+		.setBgImage(false, resources.get('img/room.jpg'))
+		.showImg(true)
+		.setMeter(300)
+		.setRestitution( 0.4 )
+		.setDraggable(true)
+		.setMoveable(true)
+		.addTo( viewX );
+		
+var ball = new hotjs.Physics.Ball()
+		.setImage(resources.get('img/baloon.png'))
+		.setSize(r*0.75,r)
+		.setDensity(hotjs.Physics.Constant.AIR_DENSITY * 0.7)
+		.setRestitution( 0.6 )
+		.setThrowable(true)
+		.setPos(x + b.size[0]/2, room.height()/2)
+		.setVelocity(0,0)
+		.setAccel(0,0)
+		.addTo( room );		
+</code>
+</pre>
+
+
+</body>
+</html>
