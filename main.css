@@ -3,9 +3,6 @@
 	font-family: Serif, fantasy, Arial;
 }
 
-.float {
-	position: absolute;
-}
 .loose {
 	margin: 20px;
 }
@@ -26,20 +23,80 @@
     -khtml-border-radius: 32px;
     border-radius: 32px;
 }
+
 .shadow {
 	-webkit-box-shadow:5px 5px 10px black;
 	-moz-box-shadow:5px 5px 10px black;	
 }
 
-div#snooker {
+.m {
+	text-align:center;
+	vertical-align:middle;
+}
+
+body {
+	color: black;
+}
+
+li {
+	padding: 2px;
+}
+
+div {
+	border: 0px solid red;
+	padding: 0px;
+	margin: 0px;
+}
+
+h2, p.subtitle {
+	width: 360px;
+	font-size: 20px;
+	color: black;
+	border-bottom:1px dotted gray;
+}
+
+.float {
 	position: absolute;
+}
+
+.group {
+	width: 500px;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div.floatright {
+	position: absolute;
+	width: 364px;
 	right: 10px;
-	top: 60px;
+	border:1px dotted gray;
+	padding: 2px;
+	background: #eeeeee;
+}
+
+td.item {
+	text-align: center;
+	padding: 3px;
+    border-radius: 10px;
+    background: #ddddff;
+}
+
+div#donate_x {
+	top: 10px;
+}
+
+div#apps {
+	top: 200px;
 }
 
 div#gomoku2 {
-	position: absolute;
-	right: 10px;
-	top: 360px;
+	top: 420px;
 }
 
