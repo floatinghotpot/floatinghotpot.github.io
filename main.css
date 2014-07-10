@@ -1,6 +1,5 @@
 
 * {
-	font-family: Serif, fantasy, Arial;
 }
 
 .loose {
@@ -23,10 +22,14 @@
     -khtml-border-radius: 32px;
     border-radius: 32px;
 }
+.round80 {
+    border-radius: 80px;
+}
 
 .shadow {
-	-webkit-box-shadow:5px 5px 10px black;
-	-moz-box-shadow:5px 5px 10px black;	
+	-webkit-box-shadow:5px 5px 30px black;
+	-moz-box-shadow:5px 5px 30px black;	
+	box-shadow:5px 5px 30px black;
 }
 
 .m {
@@ -34,8 +37,8 @@
 	vertical-align:middle;
 }
 
-body {
-	color: black;
+body.homepage {
+	font-family: Serif, Arial;
 }
 
 li {
@@ -119,6 +122,3 @@ div.demo {
 	margin: 10px;
 }
 
-code {
-	font: normal 12pt Ubuntu Mono;	
-}
