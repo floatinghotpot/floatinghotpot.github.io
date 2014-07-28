@@ -97,7 +97,7 @@ div.floatright {
 	background: #eeeeee;
 }
 
-td.item {
+.item {
 	text-align: center;
 	padding: 3px;
     border-radius: 5px;
