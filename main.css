@@ -91,7 +91,7 @@ a:hover {
 
 .item {
 	text-align: center;
-	padding: 3px;
+	padding: 5px;
     border-radius: 5px;
     background: #ddddff;
 }
@@ -124,12 +124,12 @@ div.floatright {
 }
 
 
-div#donate_x {
+div#offering {
 	top: 10px;
 }
 
-div#offering {
-	top: 150px;
+div#donate_x {
+	top: 270px;
 }
 
 div#apps {
