@@ -96,6 +96,13 @@ a:hover {
     background: #ddddff;
 }
 
+.price {
+	text-align: center;
+	padding: 5px;
+    border-radius: 5px;
+    background: #ddddff;
+}
+
 div.demo {
 	display: inline-block;
 	vertical-align: top;
@@ -129,7 +136,7 @@ div#offering {
 }
 
 div#donate_x {
-	top: 270px;
+	top: 290px;
 }
 
 div#apps {
