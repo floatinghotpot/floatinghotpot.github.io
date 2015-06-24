@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>npm stats</title>
+</head>
+<body>
+
+<h2>npm package download stats</h2>
+<div id='packages'></div>
+    
+<script>
+    
+var packages = [
+    "casino-server",
+    "plugin-verify",
+    "cordova-plugin-admobpro",
+    "cordova-plugin-admob",
+    "cordova-plugin-flurry",
+    "cordova-plugin-facebookads",
+    "cordova-plugin-mmedia",
+    "cordova-plugin-mobfox",
+    "cordova-plugin-mopub",
+    "cordova-plugin-smartadserver",
+    "cordova-plugin-nativeaudio",
+    "cordova-plugin-httpd",
+    "cordova-plugin-lianlianpay",
+    "cordova-plugin-appleiap",
+    "cordova-plugin-paypalmpl",
+    "cordova-plugin-sms",
+    "cordova-plugin-wifi",
+    "cordova-plugin-iflyspeech",
+];
+    
+var html = "<table>";
+for(var i=0; i<packages.length; i++) {
+    var p = packages[i];
+    html += "<tr><td>" + (i+1) + "</td><td><a href='https://www.npmjs.com/package/" + p + "' target='_blank'><img src='https://nodei.co/npm-dl/" + p + ".png?months=3&height=1&stars=true'/></a></td></tr>\n";
+}
+html += "</table>";
+    
+document.getElementById('packages').innerHTML = html;
+
+</script>
+
+</body>
+</html>
